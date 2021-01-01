@@ -35,8 +35,8 @@ Copy the config.yaml, run\_snakemake\_cluster.sh, cluster.json and Snakefile to 
 ├── cluster.json
 ├── config.yaml
 ├── fastq
-│   ├── negD1-WC-40_S2_L003_R1_001.fastq.gz
-│   └── negD1-WC-40_S2_L003_R2_001.fastq.gz
+│   ├── SampleA_R1_001.fastq.gz
+│   └── SampleA_R2_001.fastq.gz
 ├── run_snakemake_cluster.sh
 └── Snakefile (required for all analyses)
 ```
@@ -51,8 +51,8 @@ Copy the config.yaml, run\_snakemake.sh and Snakefile to your NGS project direct
 .
 ├── config.yaml
 ├── fastq
-│   ├── D1-WC_S2_L003_R1_001.fastq.gz
-│   └── D1-WC_S2_L003_R2_001.fastq.gz
+│   ├── SampleA_R1_001.fastq.gz
+│   └── SampleA_R2_001.fastq.gz
 ├── run_snakemake.sh
 └── Snakefile
 ```
@@ -62,7 +62,7 @@ Finally, type `sh run_snakemake.sh` followed by the maximum number of CPU cores 
 
 ## Steps in pipeline:
 
-![ScreenShot](/dag/dag_rnaseq.png)
+![ScreenShot](/dag/dag.png)
 
 ## Examining results for transcriptional chimeras:
 Your "output/spades_*/transcripts.sam"
