@@ -17,7 +17,9 @@ To create an environment using the environment.yaml file, type the following:
 This will create a conda environment called "hiv_chim".
 
 You will also have to download and unzip BBMap to a directory (for example, ~/Tools). 
+
 You can test the bbmap install with the following command (modify paths as necessary):
+
 ~/Tools/bbmap/filterbyname.sh --help
 
 ## Usage note:
