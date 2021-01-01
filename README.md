@@ -25,6 +25,7 @@ You can test the bbmap install with the following command (modify paths as neces
 You must manually activate the conda environment prior to running the sh files. Type the following to activate the environment:
 
 `conda activate hiv_chim
+
 export PATH=$PATH:~/Tools/bbmap`
 
 ## Usage on an LSF cluster (highly recommended):
