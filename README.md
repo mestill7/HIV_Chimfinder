@@ -65,7 +65,8 @@ Finally, type `sh run_snakemake.sh` followed by the maximum number of CPU cores 
 ![ScreenShot](/dag/dag.png)
 
 ## Examining results for transcriptional chimeras:
-Your "output/spades_*/transcripts.sam"
+Your "output/spades_\*/transcripts.sam" will contain the alignments of the *de novo* transcriptome to the host genome (e.g. human) supplemented with a chromosome corresponding to the viral genome (e.g. HIV). To find chimeric reads, you can search for chimeras with the "XT:" flag. 
+`grep "XT:" output/spades_\*/transcripts.sam`
 
 ## File naming requirements
 
