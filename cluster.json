@@ -1,0 +1,88 @@
+{
+    "__default__" :
+    {
+        "queue"     : "premium",
+        "allocation": "acc_Nestlerlab",
+        "tasks"        : 1,
+        "memory"    : 12000,
+        "resources" : "\"rusage[mem=12000] span[hosts=1]\"",
+        "jobname"      : "{rule}.{wildcards}",
+        "output"    : "logs/{rule}.{wildcards}.o",
+        "error"     : "logs/{rule}.{wildcards}.e",
+        "walltime"    : "00:30"
+    },
+
+    "trim_fastq_fastqc" :
+    {
+        "walltime"    : "10:00",
+        "resources" : "\"rusage[mem=50000] span[hosts=1]\""
+    },
+
+    "fastq_to_bam_human" :
+    {
+        "resources" : "\"rusage[mem=50000] span[hosts=1]\"",
+        "walltime"    : "10:00"
+    },
+
+    "fastq_to_bam_viral" :
+    {
+        "resources" : "\"rusage[mem=50000] span[hosts=1]\"",
+        "walltime"    : "5:00"
+    },
+
+   "sort_human_bam" :
+    {
+        "resources" : "\"rusage[mem=40000] span[hosts=1]\"",
+        "walltime"    : "5:00"
+    },
+
+   "extract_human_reads" :
+    {
+        "resources" : "\"rusage[mem=50000] span[hosts=1]\"",
+        "walltime"    : "5:00"
+    }, 
+
+    "extract_viral_reads" :
+    {
+        "resources" : "\"rusage[mem=50000] span[hosts=1]\"",
+        "walltime"    : "5:00"
+    },
+
+    "combine_unmapped_reads" :
+    {
+        "resources" : "\"rusage[mem=50000] span[hosts=1]\"",
+        "walltime"    : "5:00"
+    },
+
+    "create_whitelist" :
+    {
+        "resources" : "\"rusage[mem=50000] span[hosts=1]\"",
+        "walltime"    : "5:00"
+    },
+
+    "filter_whitelist" :
+    {
+        "resources" : "\"rusage[mem=50000] span[hosts=1]\"",
+        "walltime"    : "5:00"
+    },
+
+    "spades" :
+    {
+        "resources" : "\"rusage[mem=50000] span[hosts=1]\"",
+        "walltime"    : "12:00"
+    },
+
+    "create_gmap_index" :
+    {
+        "resources" : "\"rusage[mem=70000] span[hosts=1]\"",
+        "walltime"    : "10:00"
+    },
+
+    "map_denovo" :
+    {
+        "resources" : "\"rusage[mem=50000] span[hosts=1]\"",
+        "walltime"    : "10:00"
+    }
+
+}
+

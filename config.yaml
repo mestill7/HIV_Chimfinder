@@ -1,0 +1,10 @@
+human_viral_fusion: "/sc/arion/scratch/estilm01/hiv_pipe/GRCh38_hiv.fa" #hg38+hiv fasta file
+
+human_index: "/sc/arion/scratch/estilm01/hisat_hiv/hg38" # hisat2 index for human genome
+
+viral_index: "/sc/arion/scratch/estilm01/hisat_hiv/hivref" # hisat2 index for hiv genome
+
+threads_for_alignment: 20 # how many threads should be used for 
+
+ngs_path: "/sc/arion/work/estilm01/Tools/NGS-Data-Charmer"
+
